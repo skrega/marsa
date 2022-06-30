@@ -1,0 +1,63 @@
+.floating-label
+    position: relative
+    margin-bottom: 14px
+    label
+        color: $primary
+        font-size: 18px
+        line-height: 25px
+        position: absolute
+        pointer-events: none
+        left: 30px
+        top: 23px
+        transition: 0.2s ease all
+
+.floating-input
+    font-size: 18px
+    line-height: 25px
+    padding: 23px 30px
+    display: block
+    width: 100%
+    color: $primary
+    height: 70px
+    background-color: #F8EDDF
+    border-radius: 10px
+    border: 2px solid transparent
+
+.floating-input:focus
+    outline: none
+    border: 2px solid #EC5A33
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label
+    top: 0px
+    font-size: 11px
+    color: #211A6B
+
+.floating-select:focus ~ label
+    top: -18px
+    font-size: 14px
+    color: #5264AE
+
+// active state
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after
+    width: 50%
+
+.floating-textarea
+    min-height: 30px
+    max-height: 260px
+    overflow: hidden
+    overflow-x: hidden
+
+.fancybox__content :focus:not(.carousel__button.is-close)
+    outline: none
+
+.fancybox__content>.carousel__button.is-close
+    top: 39px
+    right: 39px
+    transition: all .3s
+    &:hover
+        transform: rotate(90deg)
+
+.carousel__button svg
+    fill: $primary
+    stroke: $primary
+    filter: none

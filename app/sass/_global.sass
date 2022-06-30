@@ -1,0 +1,126 @@
+html,
+body
+	height: 100%
+
+body
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+	color: #211A6B
+	background: #F8EDDF
+	font-size: 15px
+	line-height: 18px
+
+a
+	color: inherit
+	display: inline-block
+
+button
+	cursor: pointer
+
+a, button
+	transition: all .3s
+
+p
+	color: $text
+
+.title
+	font-size: 30px
+	line-height: 37px
+
+.title-section
+	position: relative
+	margin-bottom: 40px
+	text-align: center
+	&::before,
+	&::after
+		content: ""
+		position: absolute
+		top: 50%
+		height: 1px
+		width: 32%
+		background-image: url(../images/title-line.svg)
+		background-repeat: repeat
+		background-size: cover
+		// border-top: 1px dashed #211A6B
+	&::before
+		left: 0
+	&::after
+		right: 0
+
+.heading
+	margin-bottom: 8px
+	font-size: 20px
+	line-height: 24px
+	font-weight: 600
+
+.text
+	color: $text
+
+.btn
+	padding: 14px 20px
+	font-weight: 600
+	font-size: 14px
+	line-height: 17px
+	border-radius: 100px
+	border: 1px solid $primary
+	color: $primary
+	text-align: center
+
+.btn-primary
+	background-color: $primary
+	color: #FFFFFF
+	&:hover
+		box-shadow: 6px 14px 30px rgba(236, 90, 51, 0.3)
+
+.btn-group
+	align-items: center
+	justify-content: space-between
+
+.d-flex
+	display: flex
+
+.section
+	margin-bottom: 50px
+
+.items
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.item-icon
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	width: 156px
+	height: 156px
+	border-radius: 50%
+	background-color: #FFFFFF
+	box-shadow: 3px 6px 30px rgba(244, 232, 217, 0.3)
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main
+	flex: 1 0 auto
+
+.footer
+	flex: 0 0 auto
+
+.container
+  max-width: 1146px
+  margin: 0 auto
+  padding: 0 15px
+
+.card
+	background: #FDFCF6
+	border-radius: 20px
+	filter: drop-shadow(6px 26px 32px rgba(252, 229, 200, 0.6))
+
+.mr-6
+	margin-right: 24px
+
+.text-center
+	text-align: center

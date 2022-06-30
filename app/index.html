@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner d-flex">
+        <div class="header__logo">
+          <svg width="160" height="26" viewBox="0 0 160 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.335705 10.1246V0.521484H6.12873L12.9595 14.208H15.717L19.8185 5.9872H25.6334V25.1716H22.8893V8.73439H21.4965L17.4025 16.9398H11.2664L4.44263 3.26863H3.08428V19.69H0.333252C0.333252 19.69 0.335419 13.2039 0.335705 10.1246Z"
+              fill="black" />
+            <path
+              d="M40.0721 14.2153L53.7603 14.208L59.2356 25.1716H56.1742L52.0694 16.9406L38.7065 16.9412L40.0721 14.2153ZM31.2231 19.69L40.8015 0.521484H46.9197L52.4038 11.4932L41.4425 11.488C41.4425 11.488 42.1203 10.1182 42.368 9.61967C42.4907 9.37694 42.8097 8.73345 42.8097 8.73345L47.951 8.73027L45.2013 3.263H42.4704L34.275 19.69H31.2231Z"
+              fill="black" />
+            <path
+              d="M150.978 14.2045L137.29 14.1973L131.815 25.1609H134.876L138.981 16.9298L152.344 16.9304L150.978 14.2045ZM159.827 19.6792L150.249 0.510742H144.131L138.647 11.4824L149.608 11.4773C149.608 11.4773 148.93 10.1074 148.683 9.60892C148.56 9.3662 148.241 8.72271 148.241 8.72271L143.1 8.71953L145.849 3.25226H148.58L156.776 19.6792H159.827Z"
+              fill="black" />
+            <path
+              d="M94.3024 8.8345C95.5762 9.70118 98.2682 11.5106 98.2682 11.5106H109.476L115.757 15.7808C115.757 15.7808 115.754 15.845 115.626 16.3045C114.252 21.2408 109.86 25.1334 105.077 25.6196C99.5776 26.177 94.6799 23.571 92.2508 18.7919C92.1293 18.5518 92.0285 18.3008 91.8921 17.9954C92.6343 17.4884 93.3586 16.9953 94.1028 16.4884C96.1939 20.9532 99.5707 23.32 104.421 22.9148C108.207 22.5986 110.877 20.4383 112.571 16.9034C111.317 16.0446 108.649 14.2431 108.649 14.2431H97.4558C97.4558 14.2431 93.0681 11.2883 91.1885 10.0125C92.0976 5.22053 96.3846 0.669726 102.046 0.0757987C108.901 -0.644622 113.522 3.91113 114.961 7.76325C114.255 8.24749 113.531 8.7416 112.782 9.25548C110.833 5.04068 107.714 2.64224 103.12 2.7796C99.036 2.90214 96.1543 5.07032 94.3024 8.8345Z"
+              fill="black" />
+            <path
+              d="M85.6969 16.9761H80.7745V14.2426H83.088C83.088 12.1209 82.919 10.0693 81.7598 8.29249C79.6796 5.10742 76.8186 3.27425 72.9912 3.24954C71.2243 3.23867 66.9017 3.24954 66.9017 3.24954C66.9304 5.37918 66.9156 11.4449 66.9156 11.4449H61.6196V8.77771H64.2365V0.521035C64.2365 0.521035 70.6461 0.478541 73.6148 0.558588C79.4878 0.715716 84.7344 5.36337 85.5714 11.2671C85.7671 12.6447 85.6969 15.0204 85.6969 16.9761Z"
+              fill="black" />
+            <path
+              d="M64.3293 14.2451C66.4303 14.2451 70.824 14.2432 70.824 14.2432L86.8986 25.172H82.0612L70.0522 16.9766H66.9501V19.6725H64.3293V14.2451Z"
+              fill="black" />
+            <path
+              d="M123.787 25.1718C125.524 25.1718 126.932 23.7638 126.932 22.0268C126.932 20.2899 125.524 18.8818 123.787 18.8818C122.05 18.8818 120.642 20.2899 120.642 22.0268C120.642 23.7638 122.05 25.1718 123.787 25.1718Z"
+              fill="#9B1B08" />
+          </svg>
+
+        </div>
+        <a class="header__link btn-primary btn d-flex" href="tel:">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.7523 12.9014C9.46766 11.6154 8.84773 10.863 9.86621 10.061C10.7668 9.3519 10.9184 8.7508 9.96133 7.44343C9.07705 6.23562 8.73243 5.95158 7.80744 6.99328C5.83968 9.20951 6.59045 11.3975 9.40505 14.2151C12.2197 17.0326 14.4402 17.8191 16.654 15.8493C17.6948 14.9234 17.4109 14.5782 16.2043 13.6932C14.8984 12.735 14.298 12.8868 13.5896 13.7883C12.7886 14.8079 12.0368 14.1873 10.7523 12.9014Z"
+              fill="#EC5A33" />
+          </svg>
+          +7 (913) 997-85-31
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <div class="section">
+        <div class="container">
+          <div class="main-slider">
+            <div class="main-items">
+              <div class="main-item" style="background-image: url(images/main-slide-1.jpg);"></div>
+              <div class="main-item" style="background-image: url(images/main-slide-1.jpg);"></div>
+              <div class="main-item" style="background-image: url(images/main-slide-1.jpg);"></div>
+            </div>
+            <div class="main-slider__text card">
+              <p>
+                Чтобы увидеть по-настоящему завораживающие неземные пейзажи красноватых оттенков, необязательно
+                отправляться на Марс. Ехать заграницу в поисках фантастических мест тоже не нужно. Они рядом - на родном
+                Алтае.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tour section">
+        <div class="container">
+          <h1 class="title-section title">Стоимость посещения</h1>
+          <div class="tour-items">
+            <div class="tour-item card">
+              <div class="tour-item__icon item-icon">
+                <img src="images/icons/ticket.png" alt="Входной билет">
+              </div>
+              <h5 class="tour-item__heading heading">Входной билет</h5>
+              <p class="tour-item__text">В этно-ферму «Марс точка Алтая»</p>
+              <div class="tour-item-buttons btn-group d-flex">
+                <div class="btn">300 ₽ / чел. </div>
+                <button class="btn btn-primary" data-fancybox="form" data-src="#popup-order">ЗАКАЗАТЬ</button>
+              </div>
+            </div>
+            <div class="tour-item card">
+              <div class="tour-item__icon item-icon">
+                <img src="images/icons/planet.png" alt="Экскурсия">
+              </div>
+              <h5 class="tour-item__heading heading">Экскурсия</h5>
+              <p class="tour-item__text">Марс сердце Алтая</p>
+              <div class="tour-item-buttons btn-group d-flex">
+                <div class="btn">300 ₽ / чел. </div>
+                <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+              </div>
+            </div>
+            <div class="tour-item card">
+              <div class="tour-item__icon item-icon">
+                <img src="images/icons/bag.png" alt="Этно-экскурсия">
+              </div>
+              <h5 class="tour-item__heading heading">Этно-экскурсия</h5>
+              <p class="tour-item__text">Наследие</p>
+              <div class="tour-item-buttons btn-group d-flex">
+                <div class="btn">600 ₽ / чел. </div>
+                <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+              </div>
+            </div>
+            <div class="tour-item card tour-item-large" style="background-image: url(images/tour-card-bg.svg);">
+              <div class="tour-item__content">
+                <div class="tour-item__subtitle">А ещё</div>
+                <h5 class="tour-item__heading heading">Не пропустите катание
+                  на верблюдах на Марсе!</h5>
+
+                <div class="tour-item-buttons btn-group d-flex">
+                  <div class="btn">500 ₽ / чел. </div>
+                  <button class="btn btn-primary">ЗАКАЗАТЬ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="entertainment section">
+        <div class="container">
+          <h2 class="title-section title">Вашему вниманию</h2>
+          <div class="entertainment-items d-flex items">
+            <div class="entertainment-item card">
+              <div class="entertainment-item__icon item-icon">
+                <img src="images/icons/teacher.png" alt="Мастер-классы">
+              </div>
+              <div class="entertainment-item__content">
+                <h5 class="entertainment-item__heading heading">Мастер-классы</h5>
+                <p class="entertainment-item__text">
+                  Знакомство с традиционным искусством Алтая
+                </p>
+              </div>
+            </div>
+            <div class="entertainment-item card">
+              <div class="entertainment-item__icon item-icon">
+                <img src="images/icons/song.png" alt="Горловое пение">
+              </div>
+              <div class="entertainment-item__content">
+                <h5 class="entertainment-item__heading heading">Горловое пение</h5>
+                <p class="entertainment-item__text">
+                  Жители Алтая трактуют его, как пение души
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comfort section">
+        <div class="container">
+          <h3 class="title title-section">Для вашего удобства</h3>
+          <div class="comfort-items items">
+            <div class="comfort-item card">
+              <div class="comfort-item__icon item-icon">
+                <img src="images/icons/coffe.png" alt="Собственное кафе">
+              </div>
+              <div class="comfort-item__heading heading">Собственное кафе</div>
+              <p class="comfort-item__text">
+                Подкреритесь после экскурсии
+              </p>
+            </div>
+            <div class="comfort-item card">
+              <div class="comfort-item__icon item-icon">
+                <img src="images/icons/gift-box.png" alt="Сувенирный киоск">
+              </div>
+              <div class="comfort-item__heading heading">Сувенирный киоск</div>
+              <p class="comfort-item__text">
+                Возьмите частичку Марса
+                с собой на память
+              </p>
+            </div>
+            <div class="comfort-item card">
+              <div class="comfort-item__icon item-icon">
+                <img src="images/icons/transfer.png" alt="Трансфер">
+              </div>
+              <div class="comfort-item__heading heading">Трансфер</div>
+              <p class="comfort-item__text">
+                По Республике Алтай и по Кош-Агачскому району
+              </p>
+            </div>
+            <div class="comfort-item card">
+              <div class="comfort-item__icon item-icon">
+                <img src="images/icons/info.png" alt="Информация">
+              </div>
+              <div class="comfort-item__heading heading">Информационный
+                центр</div>
+              <p class="comfort-item__text">
+                Информирование по любому вопросу о Марсе
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts section">
+        <div class="container">
+          <h4 class="title title-section">Свяжитесь с нами</h4>
+          <div class="contacts-items items">
+            <a class="contacts-item item card mr-6" href="tel:+79139978531">
+              <svg class="contacts-item__icon" width="37" height="38" viewBox="0 0 37 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18.5" cy="19" r="18.5" fill="#EC5A33" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.5765 20.3901C14.596 18.4075 13.6403 17.2475 15.2105 16.0112C16.5989 14.918 16.8326 13.9913 15.3571 11.9757C13.9939 10.1137 13.4626 9.6758 12.0365 11.2818C9.00291 14.6984 10.1603 18.0716 14.4995 22.4153C18.8387 26.759 22.2621 27.9716 25.675 24.9348C27.2795 23.5073 26.8419 22.9752 24.9817 21.6108C22.9685 20.1336 22.0428 20.3675 20.9506 21.7575C19.7158 23.3292 18.5568 22.3725 16.5765 20.3901Z"
+                  fill="white" />
+              </svg>
+              <div class="contacts-item__content">
+                <p class="contacts-item__subtitle">Позвонить нам</p>
+                <h5 class="contacts-item__heading heading">+7 (913) 997-85-31</h5>
+              </div>
+            </a>
+            <a class="contacts-item item card mr-6" href="#">
+              <svg class="contacts-item__icon" width="37" height="38" viewBox="0 0 37 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18.5" cy="19" r="18.5" fill="#EC5A33" />
+                <path
+                  d="M19.0494 10.2461H19.0452C14.5186 10.2461 10.8375 13.9282 10.8375 18.4559C10.8375 20.2518 11.4163 21.9163 12.4005 23.2678L11.3773 26.3178L14.5329 25.309C15.8311 26.169 17.3797 26.6656 19.0494 26.6656C23.576 26.6656 27.2571 22.9825 27.2571 18.4559C27.2571 13.9292 23.576 10.2461 19.0494 10.2461ZM23.8264 21.8393C23.6284 22.3986 22.8423 22.8625 22.2152 22.9979C21.7863 23.0893 21.226 23.1621 19.3398 22.3801C16.9271 21.3806 15.3734 18.929 15.2523 18.7699C15.1364 18.6108 14.2774 17.4717 14.2774 16.2936C14.2774 15.1155 14.8757 14.5419 15.1169 14.2956C15.3149 14.0934 15.6423 14.001 15.9563 14.001C16.0579 14.001 16.1492 14.0062 16.2313 14.0103C16.4725 14.0205 16.5936 14.0349 16.7527 14.4156C16.9507 14.8928 17.4331 16.0709 17.4905 16.192C17.549 16.3131 17.6075 16.4773 17.5254 16.6364C17.4484 16.8006 17.3807 16.8734 17.2596 17.013C17.1385 17.1526 17.0236 17.2593 16.9025 17.4091C16.7917 17.5395 16.6665 17.679 16.806 17.9202C16.9456 18.1562 17.4279 18.9433 18.1381 19.5755C19.0545 20.3913 19.7975 20.652 20.0633 20.7628C20.2613 20.8449 20.4974 20.8254 20.642 20.6715C20.8257 20.4734 21.0525 20.145 21.2834 19.8218C21.4476 19.5898 21.6549 19.5611 21.8725 19.6432C22.0942 19.7202 23.2671 20.3 23.5083 20.4201C23.7494 20.5412 23.9085 20.5986 23.967 20.7002C24.0245 20.8018 24.0245 21.279 23.8264 21.8393Z"
+                  fill="white" />
+              </svg>
+              <div class="contacts-item__content">
+                <p class="contacts-item__subtitle">Написать нам</p>
+                <div class="contacts-item__heading heading">Перейти в WhatsApp</div>
+              </div>
+            </a>
+            <a class="contacts-item item card" href="#">
+              <svg class="contacts-item__icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19" cy="19" r="18.5" fill="#EC5A33" />
+                <path
+                  d="M27.7273 11.4606L24.5375 24.523C24.3875 25.1382 23.6932 25.4552 23.124 25.163L19.0898 23.0937L17.1822 26.1946C16.6631 27.0398 15.3497 26.6732 15.3497 25.685V22.2298C15.3497 21.9627 15.4622 21.7079 15.6561 21.5214L23.5181 14.0643C23.5118 13.9711 23.4117 13.8903 23.3117 13.9586L13.9302 20.4463L10.778 18.8306C10.04 18.4515 10.0713 17.3888 10.8342 17.0595L26.3766 10.3296C27.1208 10.0064 27.9215 10.6714 27.7276 11.4606L27.7273 11.4606Z"
+                  fill="white" />
+              </svg>
+              <div class="contacts-item__content">
+                <p class="contacts-item__subtitle">Написать нам</p>
+                <div class="contacts-item__heading heading">Перейти в Telegram</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner d-flex">
+          <div class="footer-item">
+            <div class="footer__text text">
+              <a href="#">Политика конфиденциальности</a> |
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <p>
+              <a href="https://lavaagency.ru/" target="_blank">Создание сайта - Lava Agency</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="popup-order" class="popup order" style="display:none;">
+    <div class="order__inner">
+      <h5 class="order__heading title text-center">
+        Оставте заявку
+      </h5>
+      <p class="order__text text-center">
+        Наш менеджер свяжется с Вами, ответит на все вопросы и поможет с покупкой билетов
+      </p>
+      <form class="form" action="#" name="order">
+        <div class="form-control floating-label">
+          <input class="floating-input" type="text" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Ваше имя</label>
+        </div>
+        <div class="form-control floating-label">
+          <input class="floating-input" type="tel" data-tel-input placeholder=" " maxlength="18">
+          <span class="highlight"></span>
+          <label>Ваш телефон</label>
+        </div>
+        <button class="form-btn btn btn-primary" type="submit">ОТПРАВИТЬ</button>
+        <div class="form-privacy text-center">
+          Нажимая кнопку “Отправить”, Вы соглашаетесь с политикой конфиденциальности и пользовательским соглашением
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
