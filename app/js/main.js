@@ -17,4 +17,51 @@ $(function () {
         ]
     });
 
+    window.onload = () => {
+        document.getElementById('form').addEventListener('submit', e => {
+            let valid = new Validator('form');
+            if (!valid.valid) {
+                e.preventDefault();
+            }
+        })
+    }
+
+    Fancybox.bind("[data-fancybox]", {
+        autoFocus: false,
+    });
+
+    $('#form').on('submit', function () {
+        if (document.form.name.value == '' && document.form.phone.value == '') {
+            valid = false;
+            return valid;
+        }
+        if (document.form.phone.value.length < 17 && document.form.phone.value.length < 18) {
+            valid = false;
+            return valid;
+        }
+        $.ajax({
+            type: "POST",
+            url: "mail/mail.php",
+            data: $(this).serialize()
+        }).done(function () {
+
+            Fancybox.close('[data-fancybox="form"]');
+
+            Fancybox.show([{
+                    src: "#popup-success",
+                    type: "inline",
+                },
+
+            ], );
+
+            setTimeout(function () {
+                // Done Functions
+                $('#form').trigger("reset");
+            }, 2000);
+        });
+        return false;
+    });
+
+
+
 })

@@ -60,6 +60,7 @@ function scripts() {
       'node_modules/slick-carousel/slick/slick.min.js',
       'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
       'app/js/libs/phoneinput.js',
+      'app/js/libs/Validator.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
