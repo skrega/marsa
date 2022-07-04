@@ -20,6 +20,7 @@
         align-items: center
         svg
             margin-right: 10px
+
 .main
     &-slider
         min-height: 475px
@@ -46,7 +47,10 @@
         position: absolute
         top: 44%
         background-color: transparent
+        padding: 0
         border-radius: 50%
+        &:active
+            transform: translateY(3px)
         svg circle
             transition: all .3s
         svg path
@@ -74,6 +78,7 @@
 .tour-item
     padding: 40px 30px
     &:last-child
+        background-image: url(../images/tour-card-bg.svg)
         grid-column-start: 1
         grid-column-end: 4
         grid-row-start: 2
@@ -84,7 +89,6 @@
         min-height: 230px
     &:last-child .tour-item__heading
         margin-bottom: 13px
-        width: 263px
     &__icon
         margin: 0 auto 40px
 
@@ -118,10 +122,6 @@
         margin-right: 24px
     &__icon
         margin-bottom: 40px
-
-.contacts
-
-    &-items
 
 .contacts-item
     padding: 39px 37px
@@ -173,3 +173,5 @@
 
     &-privacy
         margin-top: 30px
+
+@import media

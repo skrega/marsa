@@ -1,0 +1,457 @@
+@media (max-width: 1279px)
+
+    body
+        font-size: 13px
+        line-height: 16px
+
+    .title
+        font-size: 26px
+        line-height: 32px
+
+    .title-section
+        &::before,
+        &::after
+            width: 31%
+
+    .heading
+        font-size: 18px
+        line-height: 22px
+
+    .btn
+        font-size: 12px
+        line-height: 15px
+
+    .item-icon
+        width: 120px
+        height: 120px
+        img
+            width: 61px
+            height: 61px
+
+    .mr-6
+        margin-right: 24px
+
+    .container
+        max-width: 918px
+
+    .main
+        &-slider
+            min-height: 463px
+        &-slider__text
+            max-width: 734px
+            padding: 34px 51px
+            font-size: 15px
+            line-height: 21px
+        &-slide-btn
+            top: 42%
+
+    .tour-item
+        padding: 40px 24px
+        &:last-child
+            padding: 30px
+            background-size: 123%
+        &:last-child .tour-item__heading
+            margin-bottom: 21px
+        &__content
+            width: 237px
+
+    .entertainment-item
+        padding: 30px 24px
+        &__icon
+            margin: 0 30px 0 0
+        &__content
+            max-width: 214px
+
+    .comfort-items
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-column-gap: 24px
+        grid-row-gap: 24px
+
+    .comfort-item
+        width: 100%
+        padding: 30px 45px 30px 24px
+        min-height: 180px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &:not(:last-child)
+            margin-right: 0px
+        &__icon
+            margin-bottom: 00px
+        &__content
+            max-width: 213px
+            width: 100%
+
+    .contacts-item
+        padding: 39px 35px
+        width: 33%
+        &:first-child
+            width: 34%
+        &__icon
+            margin-right: 16px
+        &__subtitle
+            font-size: 13px
+            line-height: 18px
+        &__heading span
+            display: none
+
+@media (max-width: 999px)
+
+    body
+        font-size: 12px
+        line-height: 15px
+
+    .title
+        font-size: 24px
+        line-height: 29px
+
+    .title-section
+        &::before,
+        &::after
+            width: 26%
+
+    .heading
+        font-size: 16px
+        line-height: 20px
+
+    .btn
+        font-size: 12px
+        line-height: 15px
+
+    .item-icon
+        width: 106px
+        height: 106px
+        img
+            width: 54px
+            height: 54px
+
+    .section
+        margin-bottom: 40px
+
+    .title-section
+        margin-bottom: 30px
+
+    .container
+        max-width: 690px
+
+    .main
+        &-slider
+            min-height: 475px
+        &-item
+            min-height: 404px
+        &-slider__text
+            max-width: 546px
+            margin: -71px auto 0
+            padding: 32px 33px
+            font-size: 14px
+            line-height: 20px
+        &-slide-btn
+            position: absolute
+            top: 44%
+
+    .tour-item
+        padding: 40px 30px
+        &:not(:last-child)
+            text-align: center
+            .tour-item-buttons
+                flex-direction: column
+        &:last-child
+            background-size: 190%
+            background-position: -248px 14px
+        &:last-child .tour-item__heading
+            margin-bottom: 16px
+        &__icon
+            margin: 0 auto 30px
+        &__subtitle
+            margin-bottom: 8px
+        &__text
+            max-width: 124px
+            width: 100%
+            margin: 0 auto 30px
+        &__content
+            width: 231px
+
+        .btn:first-child
+            margin-bottom: 6px
+
+    .entertainment-item
+        padding: 30px
+        flex-direction: column
+        text-align: center
+        &__icon
+            margin: 0 0px 30px 0
+        &__content
+            max-width: 204px
+
+    .comfort-item
+        padding: 30px
+        flex-direction: column
+        min-height: 258px
+        text-align: center
+        &__icon
+            margin-bottom: 30px
+        &__content
+            max-width: 223px
+        &__text
+            max-width: 204px
+            width: 100%
+            margin: 0 auto
+
+    .contacts-items
+        flex-wrap: wrap
+    .contacts-item
+        padding: 39px 37px
+        width: 48%
+        &:first-child
+            width: 100%
+            justify-content: center
+            margin-right: 0
+            margin-bottom: 24px
+        &__subtitle
+            font-size: 14px
+            line-height: 20px
+        &__heading span
+            display: inline-block
+
+    .footer-item
+        font-size: 10px
+        line-height: 14px
+
+@media (max-width: 767px)
+
+    body
+        line-height: 14px
+
+    .title
+        font-size: 16px
+        line-height: 20px
+
+    .title-section
+        &::before,
+        &::after
+            width: 22%
+
+    .btn
+        font-size: 12px
+        line-height: 15px
+
+    .item-icon
+        width: 106px
+        height: 106px
+        img
+            width: 54px
+            height: 54px
+
+    .item-icon
+        width: 90px
+        height: 90px
+        img
+            width: 46px
+            height: 46px
+
+    .container
+        padding: 0 24px
+
+    .header
+        padding: 20px 0 30px
+        &__logo
+            width: 187px
+            height: 30px
+        &__link
+            width: auto
+            height: auto
+            border-radius: 50%
+            padding: 0
+            background-color: transparent
+            span
+                display: none
+            svg
+                margin-right: 0px
+                width: 40px
+                height: 40px
+                circle
+                    fill: $primary
+                path
+                    fill: #fff
+
+    .main
+        &-slider
+            min-height: 304px
+
+        &-item
+            min-height: 180px
+        &-slider__text
+            max-width: 100%
+            margin: -31px auto 0
+            padding: 22px 24px
+            font-size: inherit
+            line-height: inherit
+        &-slide-btn
+            top: 44%
+            svg
+                width: 24px
+                height: 24px
+
+        &-slide-btn.slick-prev
+            left: 24px
+        &-slide-btn.slick-next
+            right: 24px
+
+    .tour-items
+        display: flex
+        flex-wrap: wrap
+
+    .tour-item
+        padding: 30px
+        width: 47%
+        &:nth-child(3)
+            width: 100%
+        &:last-child
+            background-image: url(../images/tour-card-bg-mob.svg)
+            background-size: 104%
+            background-position: bottom
+            width: 100%
+            min-height: 330px
+        &:last-child .tour-item__heading
+            margin-bottom: 13px
+        &__icon
+            margin: 0 auto 40px
+
+        &__text
+            margin-bottom: 30px
+        &__subtitle
+            margin-bottom: 8px
+        &__content
+            width: 268px
+        .btn
+            width: 100%
+
+    .items
+        display: flex
+        flex-direction: column
+
+    .entertainment-item:not(:last-child)
+        margin-right: 0
+        margin-bottom: 24px
+
+    .entertainment-item,
+    .comfort-item
+        display: flex
+        align-items: center
+        flex-direction: row
+        text-align: left
+        padding: 30px 24px
+        width: 100%
+
+    .entertainment-item__icon,
+    .comfort-item__icon
+        margin: 0 30px 0px 0
+
+    .comfort-item
+        min-height: 150px
+        &__text
+            margin: 0
+
+    .contacts-item
+        width: 100%
+        padding: 26px 30px
+        &.mr-6
+            margin-right: 0
+            margin-bottom: 14px
+        &:first-child
+            justify-content: flex-start
+
+    .footer
+        &__inner
+            flex-direction: column
+            justify-content: center
+        &-item
+            font-size: 14px
+            line-height: 20px
+        &-item:first-child
+            margin-bottom: 24px
+        &__text
+            flex-direction: column
+            display: flex
+            span
+                display: none
+
+@media (max-width: 479px)
+
+    body
+        font-size: 12px
+        line-height: 15px
+
+    .title-section
+        &::before,
+        &::after
+            width: 22%
+
+    .heading
+        font-size: 14px
+        line-height: 17px
+
+    .btn
+        font-size: 11px
+        line-height: 13px
+        padding: 14px 10px
+
+    .header__link
+        padding: 0
+
+    .item-icon
+        width: 120px
+        height: 120px
+        img
+            width: 61px
+            height: 61px
+
+    .main
+        &-slider
+            min-height: 100%
+        &-slider__text
+            margin: -31px auto 0
+            font-size: 13px
+            line-height: 18px
+
+    .tour-items
+        flex-wrap: nowrap
+        flex-direction: column
+
+    .tour-item
+        padding: 30px 24px
+        width: 100%
+        &:last-child
+            padding: 30px 24px
+            background-size: 124%
+            .btn-primary
+                width: 102px
+        &:not(:last-child) .tour-item-buttons
+            flex-direction: row
+        .btn
+            width: 47%
+        .btn:first-child
+            margin-bottom: 0
+
+        &__content
+            width: 224px
+
+    .entertainment-item
+        padding: 30px 24px
+        flex-direction: column
+        align-items: flex-start
+        &__icon
+            margin: 0 auto 30px
+        &__content
+            max-width: 194px
+    .comfort-item
+        padding: 30px 24px
+        flex-direction: column
+        align-items: flex-start
+        &__icon
+            margin: 0 auto 30px
+        &__content
+            max-width: 194px
+        &__text
+            max-width: 184px
