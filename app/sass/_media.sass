@@ -114,19 +114,6 @@
     .floating-select:focus ~ label
         font-size: 10px
 
-    .info-popup
-        max-width: 962px
-        min-height: 496px
-        padding: 48px 59px 51px
-        .carousel__button.is-close
-            top: 41px
-            right: 50px
-    .popup__inner
-        padding: 25px 42px 29px
-
-    .popup__inner-text
-        margin-top: 16px
-
 @media (max-width: 999px)
 
     body
@@ -398,6 +385,7 @@
         display: flex
         align-items: center
         flex-direction: row
+        justify-content: center
         text-align: left
         padding: 30px 24px
         width: 100%
@@ -408,6 +396,7 @@
 
     .comfort-item
         min-height: 150px
+
         &__text
             margin: 0
 
@@ -430,6 +419,7 @@
         &-item:first-child
             margin-bottom: 24px
         &__text
+            text-align: center
             flex-direction: column
             display: flex
             span
@@ -491,10 +481,7 @@
         max-width: 446px
         padding: 60px 20px 40px
 
-    .info-popup
-        border-radius: 0
-
-@media (max-width: 479px)
+@media (max-width: 480px)
 
     body
         font-size: 12px
@@ -575,12 +562,3 @@
 
     .form-btn
         padding: 22px 10px
-
-    .info-popup
-        padding: 20px
-        .carousel__button.is-close
-            top: 14px
-            right: 15px
-
-    .popup__inner
-        padding: 25px 32px 29px
