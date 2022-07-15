@@ -36,19 +36,18 @@ $(function () {
     });
 
     // Передача названия эксурсии в скрытый input
-    document.addEventListener("DOMContentLoaded", () => {
-        const buttons = document.querySelectorAll('.tour-item');
-        const excursion = document.getElementById('excursion')
 
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", () => {
-                const parent = buttons[i];
-                const title = parent.querySelector('.tour-item__heading').textContent;
-                excursion.setAttribute('value', title);
+    const buttons = document.querySelectorAll('.tour-item');
+    const excursion = document.getElementById('excursion')
 
-            }, false);
-        }
-    });
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", () => {
+            const parent = buttons[i];
+            const title = parent.querySelector('.tour-item__heading').textContent;
+            excursion.setAttribute('value', title);
+
+        }, false);
+    }
 
     // Отправка формы
     $('#form').on('submit', function () {
@@ -82,8 +81,7 @@ $(function () {
         });
         return false;
     });
-
-
-
-
+    $('.success-btn').on('click', function () {
+        Fancybox.close('[data-fancybox]');
+    })
 })

@@ -10,5 +10,5 @@ $excursion = trim($_POST["excursion"]);
 
 $message = "\nИмя: $name \nТелефон: $phone  \nЭкскурсия: $excursion ";
 
-$pagetitle = "Обратный звонок MARS.A - \"$siteName\"";
+$pagetitle = "Обратный звонок - \"$siteName\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
